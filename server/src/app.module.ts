@@ -3,6 +3,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsersModule } from './users/users.module';
 import { Connection } from 'typeorm';
 import { User } from './users/user.entity';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -17,6 +18,7 @@ import { User } from './users/user.entity';
       synchronize: true,
     }),
     UsersModule,
+    AuthModule,
   ],
   providers: [],
 })
