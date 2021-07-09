@@ -19,9 +19,6 @@ export class User {
     return user;
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
-  private constructor() {}
-
   @PrimaryGeneratedColumn()
   id: number = 0;
 
